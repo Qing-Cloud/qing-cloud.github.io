@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mevoco (ZStack 企业版)1.9 发布_ZSTACK</title>
+<meta name="keywords" content="Mevoco,ZStack,企业,版,1.9,发布,新春,首" />
+<meta name="description" content="轻量级云计算管理平台 Mevoco 最新版本(1.9)于 2017 年 02 月 09 日正 式发布，(ZStack 云计算官网)。 Mevoco 是基于下一代开源云引擎 ZStack 商业产品，安装部署及其简洁。企业用户仅需要下载" />
+<link href="../../../templets/default/style/dedecms.css" tppabs="http://zstack.io/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="../../../include/dedeajax2.js" tppabs="http://zstack.io/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("http://zstack.io/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+<div class="header_top">  
+    <div >  
+     <span id="time" class="time">
+        <a href="javascript:if(confirm(%27http://www.zstack.io/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/%27" tppabs="http://www.zstack.io/"><img src="../../../templets/default/images/logo.gif" tppabs="http://zstack.io/templets/default/images/logo.gif"  alt="ZSTACK"/></a> 
+     </span>
+     <div class="toplinks" id="navMenu">
+      <ul>
+        <li class='hover'><a href="../../index.htm" tppabs="http://zstack.io/news/" ><span>新闻动态</span></a></li>
+        <li><a href="../../../company/index.htm" tppabs="http://zstack.io/company/"  rel='dropmenu18'><span>关于我们</span></a></li>
+        
+        <li><a href="../../../support/index.htm" tppabs="http://zstack.io/support/"  rel='dropmenu12'><span>技术支持</span></a></li>
+        
+        <li><a href="../../../product_downloads/index.htm" tppabs="http://zstack.io/product_downloads/"  rel='dropmenu24'><span>产品下载</span></a></li>
+        
+        <li><a href="../../../community/index.htm" tppabs="http://zstack.io/community/"  rel='dropmenu25'><span>开源社区</span></a></li>
+        
+        <li><em>400-962-2212</em></li>
+      </ul>
+     </div> 
+
+     <div class="search fright">
+      <form  name="formsearch" action="http://zstack.io/plus/search.php">
+        <div class="form">        
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="" onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='';}" autocomplete="off"/>
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        </div>   
+    </div> 
+</div>
+<!-- //二级子类下拉菜单 -->  
+   <script type='text/javascript' src="../../../templets/default/js/dropdown.js" tppabs="http://zstack.io/templets/default/js/dropdown.js"></script>  
+   <ul id="dropmenu17" class="dropMenu">  
+         
+   </ul><ul id="dropmenu18" class="dropMenu">  
+         
+       <li><a href="../../../about/index.htm" tppabs="http://zstack.io/about/">关于我们</a></li>  
+         
+       <li><a href="../../../contact/index.htm" tppabs="http://zstack.io/contact/">联系我们</a></li>  
+         
+       <li><a href="../../../joinus/index.htm" tppabs="http://zstack.io/joinus/">加入我们</a></li>  
+         
+   </ul><ul id="dropmenu12" class="dropMenu">  
+         
+       <li><a href="../../../support/user-manual/index.htm" tppabs="http://zstack.io/support/user-manual/">用户手册</a></li>  
+         
+       <li><a href="../../../support/docs/index.htm" tppabs="http://zstack.io/support/docs/">文档</a></li>  
+         
+       <li><a href="../../../support/tutorials/index.htm" tppabs="http://zstack.io/support/tutorials/">教程</a></li>  
+         
+       <li><a href="../../../support/video/index.htm" tppabs="http://zstack.io/support/video/">视频</a></li>  
+         
+       <li><a href="../../../support/blog/index.htm" tppabs="http://zstack.io/support/blog/">博客</a></li>  
+         
+       <li><a href="../../../support/FAQ/index.htm" tppabs="http://zstack.io/support/FAQ/">FAQ</a></li>  
+         
+   </ul><ul id="dropmenu24" class="dropMenu">  
+         
+       <li><a href="../../../product_downloads/premium/index.htm" tppabs="http://zstack.io/product_downloads/premium/">付费版</a></li>  
+         
+       <li><a href="../../../product_downloads/experimental/index.htm" tppabs="http://zstack.io/product_downloads/experimental/">实验版</a></li>  
+         
+       <li><a href="../../../product_downloads/trial/index.htm" tppabs="http://zstack.io/product_downloads/trial/">试用版</a></li>  
+         
+   </ul><ul id="dropmenu25" class="dropMenu">  
+         
+       <li><a href="../../../community/code/index.htm" tppabs="http://zstack.io/community/code/">代码</a></li>  
+         
+       <li><a href="../../../community/docs/index.htm" tppabs="http://zstack.io/community/docs/">文档</a></li>  
+         
+       <li><a href="../../../community/tutorials/index.htm" tppabs="http://zstack.io/community/tutorials/">教程</a></li>  
+         
+       <li><a href="../../../community/downloads/index.htm" tppabs="http://zstack.io/community/downloads/">开源版下载</a></li>  
+         
+   </ul>  
+   <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+<link href="../../../templets/default/css/news-slider.css" tppabs="http://zstack.io/templets/default/css/news-slider.css" rel="stylesheet" >
+<link href="../../../templets/default/css/bootstrap.min.css" tppabs="http://zstack.io/templets/default/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../../templets/default/css/font-awesome.min.css" tppabs="http://zstack.io/templets/default/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="../../../templets/default/css/animate.min.css" tppabs="http://zstack.io/templets/default/css/animate.min.css" rel="stylesheet" media="all">
+<link href="../../../templets/default/css/bootstrap-touch-slider.css" tppabs="http://zstack.io/templets/default/css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+  <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+      <!-- Wrapper For Slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Third Slide -->
+        <div class="item active">
+
+          <!-- Slide Background -->
+          <img src="../../../templets/default/images/news.jpg" tppabs="http://zstack.io/templets/default/images/news.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+          <div class="bs-slider-overlay"></div>
+
+          <div class="container">
+            <div class="row">
+              <!-- Slide Text Layer -->
+              <div class="slide-text slide_style_center ">
+               
+                <img src="../../../templets/default/images/news02.png" tppabs="http://zstack.io/templets/default/images/news02.png" width="70%" style="margin-top: 10%" />
+               
+                              
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Slide -->
+        <!-- End of Slide -->        
+      </div><!-- End of Wrapper For Slides -->
+    </div> <!-- End  bootstrap-touch-slider Slider -->
+
+
+
+<!-- /header -->
+<div class="container clear mt1">
+<div class="place"> <strong>当前位置:</strong> <a href="javascript:if(confirm(%27http://www.zstack.io/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/%27" tppabs="http://www.zstack.io/">主页</a> > <a href="../../index.htm" tppabs="http://zstack.io/news/">新闻动态</a> >  </div>
+<div class="art">
+  <ul>
+     <li>  </li>
+    </ul>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>Mevoco (ZStack 企业版)1.9 发布</h2>
+  </div>
+  <!-- /title -->
+  <div class="info">zstack, mevocoo | 2017-02-25 10:24</div>
+  <!-- /info -->
+  <div class="content">
+   <p>
+    <div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+      <p><font size=3></p>
+<h2>Mevoco (ZStack 企业版)1.9 发布: 新春首发，2017 年值得您期待的私有云</h2>
+<p><br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/Logo.png" tppabs="http://www.zstack.io/images/mevoco/Logo.png" width="745" height="100%" />
+</center>
+<p><br><br>
+轻量级云计算管理平台 Mevoco 最新版本(1.9)于 2017 年 02 月 09 日正 式发布，(ZStack 云计算官网)。 Mevoco 是基于下一代开源云引擎 ZStack 商业产品，安装部署及其简洁。企业用户仅需要下载一个安装文件，在 30 分钟 内就可以完成私有云的安装和部署，横向扩展仅需从 UI 界面直接添加资源。 Mevoco 官网提供了完善的私有云部署方案及文档。</p>
+<p>Mevoco 支持操作系统到应用的一站式安装，简约的图形用户界面和专业的服务支持让私有云不再难以驾驭。主要功能包括本地存储、网络共享存储、云路由、分布式存储、扁平网络、EIP 网络、账号管理、LDAP、镜像仓库、计费、性能监控、云主机在线迁移、克隆、接管 vCenter 等，可以满足90%企业的私有 云需求。</p>
+<p>金鸡报晓迎新春，各位同学新年好。ZStack 企业版挑着一箩筐沉甸甸的新功能，在新年与大家见面了。</p>
+<hr />
+<h2>ZStack 企业版 ISO 支持全新 TUI 及使用模式</h2>
+<p>首先为大家带来的最新的 ZStack ISO 镜像，该镜像是 ZStack 社区基于 CentOS-7-x86_64-Minimal-1511.ISO 官方 ISO 深度定制的，分为 ZStack Enterprise ISO(企业版镜像) 和 ZStack Community ISO(社区版镜 像)。ZStack 始终贯秉承着简单易用的理念，1.9 版本的镜像依然支持一键安装、一键无缝升级、离线安装等特性。同时，新的 TUI 界面覆盖了大多数常用功能并提供友好的展示界面，提高了管理员的工作效率。
+<br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/TUI.png" tppabs="http://www.zstack.io/images/mevoco/TUI.png" width="745" height="100%" />
+<br><br>
+图1:管理节点UI界面
+</center>
+<p><br><br></p>
+<hr />
+<h2>vCenter 支持 Mevoco 云路由(技术预览)</h2>
+<p>在 1.8 版本中 ZStack 推出了云路由功能，大幅提高了网络的灵活性，获得了各位同学的一致好评。Mevoco1.9 中，云路由的网络服务将支持 VMware 的云主机。在 Mevoco 所接管的 vCenter 中的云主机，通过定制的云路由可以 支持弹性网络、端口转发、IPsec 隧道、负载均衡等网络服务。搭建和使用过程与 Mevoco 云路由完全相同，保证一致的用户体验。云路由服务详情请查看 Mevoco 官网《用户手册》。
+<br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/VcenterW.png" tppabs="http://www.zstack.io/images/mevoco/VcenterW.png" width="745" height="100%" />
+<br><br>
+图2:vCenter 云路由网络
+</center>
+<p><br><br>   </p>
+<hr />
+<h2>支持共享云盘</h2>
+<p>在 Mevoco1.9 中，用户创建云盘时可以勾选共享云盘选项，那么创建的云盘就可以同时挂载到多个云主机上了。在 Ceph 主存储的环境下能实现此功能，同时的读写云盘可能造成数据的不一致，请在明确需求和风险的情况下使用此功能。
+<br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/volume.png" tppabs="http://www.zstack.io/images/mevoco/volume.png" width="745" height="100%" />
+<br><br>
+图3:共享云盘挂载到多个云主机上
+</center>
+<p><br><br></p>
+<hr />
+<h2>支持进度条显示操作</h2>
+<p>小小的一个进度条，却是千呼万唤始出来的功能，在 Mevoco1.9 中与大家见面了，它在众多场景下给用户带来良好的体验。此版本支持添加镜像、创建镜像、冷迁移的操作中的显示，这些操作中可能由于网络等原因造成完成时间较长， 管理员可根据进度条做出相应判断。我们会在后面的版本中继续添加进度显示的场景。
+<br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/newimage.png" tppabs="http://www.zstack.io/images/mevoco/newimage.png" width="745" height="100%" />
+<br><br>
+图4:添加新镜像进度条显示
+</center>
+<p><br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/move.png" tppabs="http://www.zstack.io/images/mevoco/move.png" width="745" height="100%" />
+<br><br>
+图5:冷迁移进度条显示
+</center>
+<p><br><br></p>
+<hr />
+<h2>云路由负载均衡服务</h2>
+<p>Mevoco 1.9 的云路由，新增了负载均衡服务。用户创建的负载均衡器可以 将公网地址的访问流量分发到一组后端的云主机上， 并支持自动判断并隔离不 可用的主机，从而提高业务的服务能力和可用性。可以根据实际情况，随时添加或删减负载均衡规则中的云主机来调整服务能力，而且这些操作不会影响业务的正常访问。负载均衡器支持 HTTP/TCP 两种协议。此外,负载均衡器还支持灵活配置多种转发策略，实现高级转发控制功能。
+<br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/LB-1.png" tppabs="http://www.zstack.io/images/mevoco/LB-1.png" width="745" height="100%" />
+<br><br>
+图6:负载均衡器
+</center>
+<p><br><br> </p>
+<hr />
+<h2>实时更新云主机的网络和数据云盘的 QoS</h2>
+<p>Mevoco 1.9 支持实时更新云主机的网络和数据云盘的 QoS，即限制云主机的网络带宽和数据云盘的磁盘带宽。保证关键业务能有足够的 IO 性能。
+<br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/VM-1.png" tppabs="http://www.zstack.io/images/mevoco/VM-1.png" width="745" height="100%" />
+<br><br>
+图7:设置云主机网卡网络带宽
+</center>
+<p><br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/B.png" tppabs="http://www.zstack.io/images/mevoco/B.png" width="745" height="100%" />
+<br><br>
+图8:设置云盘磁带带宽
+</center>
+<p><br><br>
+此外，Mevoco 1.9 版本还支持一个云主机网卡绑定多个 EIP;云主机可以直接修改 CPU 和内存的配置，重启后生效;取消 sftp 类型的镜像服务器，已添加用户可以继续使用;新增云主机 Network Anti-Spoofing;为云主机和镜象添加 QGA 开关，方便管理;我们还优化部分界面和业务逻辑，提高了易用性。</p>
+<p>更多的新增功能，用户可以从 Mevoco 官网的文档页面获取。</p>
+<p>Mevoco 具有其他私有云软件所不具备的在线无缝升级功能。Mevoco 和 ZStack 的当前用户可以免费升级到 Mevoco1.9。整个升级过程大概只需要 3 分 钟时间，升级过程中不会影响在线云主机的正常运行。Mevoco 的新用户可以从 Mevoco 官网(<a href="javascript:if(confirm(%27http://www.zstack.io/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/%27" tppabs="http://www.zstack.io/"><strong><a href="javascript:if(confirm(%27http://www.zstack.io/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/%27" tppabs="http://www.zstack.io/">http://www.zstack.io</a></strong></a>)下载到最新的版本进行免费的安装试用。该软件提供多种软件授权协议，普通用户最多可以申请 10 台计算节点的免费基础版。企业升级云计算，不可错过 Mevoco!</p>
+<p>Mevoco 取自 Memory，Volume 和 Computing 三个英文单词的头两个字母的组合。内存、存储和计算是云计算的基础资源，这寓意 Mevoco 汇集并管 理了云计算的底层资源，是云计算的核心与关键。Mevoco 目前支持 KVM 云主 化、各种主流存储方案(本地存储、NAS、SAN、Ceph、Glusterfs、FusionStor 等等)、主流私有云网络模型(分布式扁平网络，分布式 EIP，防火墙)，以及 各种私有云增值功能(多租户、计费、监控、资源限制、资源超分等等)。Mevoco 的出现可以帮助中国的企业在“互联网+”的大潮中快速转型和升级，也给看似 复杂的云计算软件市场带来一股大道至简的清新之风。</p>
+<p>感兴趣的朋友可以扫描下面的二维码加入 Mevoco 微信公众号，也可以加入 ZStackQQ 群 410185063 参与技术交流与讨论。
+<br><br></p>
+<center>
+<img src="../../../../www.zstack.io/images/mevoco/wechat2.jpg" tppabs="http://www.zstack.io/images/mevoco/wechat2.jpg" width="300" height="300" />
+</center>
+<p><br><br>                </p>
+<hr />
+<h2>公司背景介绍:</h2>
+<p>上海云轴信息科技有限公司(简称上海云轴)成立于 2015 年。公司发起并
+维护着下一代开源云计算引擎 ZStack(<a href="javascript:if(confirm(%27http://www.zstack.io/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/%27" tppabs="http://www.zstack.io/"><strong><a href="javascript:if(confirm(%27http://www.zstack.io/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/%27" tppabs="http://www.zstack.io/">http://www.zstack.io</a></strong></a>)公司团队成员均来自硅谷和在国内的外企核心研发人员，在云计算相关核心领域有超过 10 年的技术积累。上海云轴致力于推动云计算技术的产品化和普及化。ZStack 简便易用，不到一年时间，在国内社区已经吸引了近千名爱好者。使用 ZStack 搭建私 有云生产环境的企业涵盖金融，电信，电商，互联网，游戏，教育，汽车，纺织等各行业。</p>
+      
+   </p>
+  </div>
+  <!-- /content -->
+  
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>下一篇：没有了 </li>
+    </ul>
+   </div>
+   <!-- /context -->
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ </div>
+</div>
+
+<!-- //底部模板 -->
+<div class="foot mt1 clear">
+  <div class=" container center ">
+    <div class="row up">
+			<div class="col-m-5 first">
+				<small>合作客户</small>
+			</div>
+			<div class="col-m-5">
+				<img src="../../../templets/default/images/foot04.png" tppabs="http://zstack.io/templets/default/images/foot04.png">
+			</div>
+			<div class="col-m-5">
+				<img src="../../../templets/default/images/foot01.png" tppabs="http://zstack.io/templets/default/images/foot01.png">
+			</div>
+			<div class="col-m-5">
+				<img src="../../../templets/default/images/foot02.png" tppabs="http://zstack.io/templets/default/images/foot02.png">
+			</div>
+			<div class="col-m-5">
+				<img src="../../../templets/default/images/foot03.png" tppabs="http://zstack.io/templets/default/images/foot03.png">
+			</div>
+	</div> 
+
+	<div class="row down">
+			<ul class="col-md-1 col-lg-1 col-xs-1 col-sm-1">
+			    <p>技术支持</p>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/docs/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/docs/%27" tppabs="http://www.zstack.io/support/docs/"><li>文档</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/tutorials/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/tutorials/%27" tppabs="http://www.zstack.io/support/tutorials/"><li>教程</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/video/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/video/%27" tppabs="http://www.zstack.io/support/video/"><li>视频</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/user-manual/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/user-manual/%27" tppabs="http://www.zstack.io/support/user-manual/"><li>用户手册</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/blog/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/blog/%27" tppabs="http://www.zstack.io/support/blog/"><li>博客</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/FAQ/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/FAQ/%27" tppabs="http://www.zstack.io/support/FAQ/"><li>FAQ</li></a>
+			</ul>
+			<ul class="col-md-1 col-lg-1 col-xs-1 col-sm-1">
+			    <p>社区</p>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/community/code/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/community/code/%27" tppabs="http://www.zstack.io/community/code/"><li>代码</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/community/docs/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/community/docs/%27" tppabs="http://www.zstack.io/community/docs/"><li>文档</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/community/tutorials/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/community/tutorials/%27" tppabs="http://www.zstack.io/community/tutorials/"><li>教程</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/community/downloads/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/community/downloads/%27" tppabs="http://www.zstack.io/community/downloads/"><li>开源版下载</li></a>
+			</ul>
+			<ul class="col-md-1 col-lg-1 col-xs-1 col-sm-1">
+                <p>产品下载</p>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/product_downloads/premium/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/product_downloads/premium/%27" tppabs="http://www.zstack.io/product_downloads/premium/"><li>付费版</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/product_downloads/experimental/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/product_downloads/experimental/%27" tppabs="http://www.zstack.io/product_downloads/experimental/"><li>实验版</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/product_downloads/trial/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/product_downloads/trial/%27" tppabs="http://www.zstack.io/product_downloads/trial/"><li>试用版</li></a>
+			</ul>
+			<ul class="col-md-1 col-lg-1 col-xs-1 col-sm-1">
+                <p>公司</p>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/about/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/about/%27" tppabs="http://www.zstack.io/about/"><li>关于我们</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/contact/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/contact/%27" tppabs="http://www.zstack.io/contact/"><li>联系我们</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/joinus/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/joinus/%27" tppabs="http://www.zstack.io/joinus/"><li>加入我们</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/news/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/news/%27" tppabs="http://www.zstack.io/news/"><li>新闻</li></a>
+			</ul>
+			<ul class="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+				<p>合作</p>
+                <li>招聘<a href="mailto:hr@zstack.io"><small>hr@zstack.io</small></a></li>
+                <li>商务<a href="mailto:sales@zstack.io"><small>sales@zstack.io</small></a></li>
+                <li>联系<a href="mailto:contact@zstack.io"><small>contact@zstack.io</small></a></li>
+			</ul>
+			<div class="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+				<!-- <img src="/templets/default/images/wchat03.png" style="width: 60%;">
+				<h6>ZStack中国社区qq群<br/>
+				<img src="/templets/default/images/icon04.png"><br/>
+                 410185063
+				</h6> -->
+			</div> 
+			<div class="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+				<img src="../../../templets/default/images/wchat01.png" tppabs="http://zstack.io/templets/default/images/wchat01.png" style="width: 70%;">
+				<!-- <h6>Zstack微信公众号<br/>
+				<img src="/templets/default/images/icon04.png"><br/>
+                 zstack_org
+				</h6> -->
+			</div>
+			<div class="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+				<img src="../../../templets/default/images/wchat02.png" tppabs="http://zstack.io/templets/default/images/wchat02.png" style="width: 70%;">
+				<!-- <h6>Mevoco微信公众号<br/>
+				<img src="/templets/default/images/icon04.png"><br/>
+                 mevoco-zstack
+				</h6> -->
+			</div>
+			
+	</div> 
+	<span>版权所有@2016上海云轴信息科技有限公司<br/>沪ICP备15055560号</span>
+  </div>  
+</div>
+<!-- /footer -->
+</body>
+</html>

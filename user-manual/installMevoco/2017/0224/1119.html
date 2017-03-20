@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>3.1 ZStack管理节点_ZSTACK</title>
+    <meta name="keywords" content="3.1,ZStack,管理,节点,如果,用户,选择,管理,节" />
+    <meta name="description" content="如果用户选择管理节点安装模式，重启后会自动安装ZStack企业版的管理节点，如图3-1-1所示。安装完成后将自动进入TUI。 图3-1-1 自动安装ZStack管理节点 1. 主界面 TUI的主界面如图3-1-2所示" />
+    <link href="../../../../templets/default/style/dedecms.css" tppabs="http://zstack.io/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+    <link rel="stylesheet" href="../../../../templets/default/css/sidebar-menu.css" tppabs="http://zstack.io/templets/default/css/sidebar-menu.css">
+    
+  </head>
+  
+  <body class="articlelist">
+    <div class="header_top">  
+    <div >  
+     <span id="time" class="time"><a href="javascript:if(confirm(%27http://www.zstack.io/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/%27" tppabs="http://www.zstack.io/"><img src="../../../../templets/default/images/logo.gif" tppabs="http://zstack.io/templets/default/images/logo.gif"   alt="ZSTACK"/></a> </span>    
+     <div class="toplinks" id="navMenu">
+      <ul>
+        
+        <li><a href="../../../../news/index.htm" tppabs="http://zstack.io/news/" ><span>新闻动态</span></a></li>
+        
+        <li><a href="../../../../company/index.htm" tppabs="http://zstack.io/company/"  rel='dropmenu18'><span>关于我们</span></a></li>
+        
+        <li><a href="../../../../support/index.htm" tppabs="http://zstack.io/support/"  rel='dropmenu12'><span>技术支持</span></a></li>
+        
+        <li><a href="../../../../product_downloads/index.htm" tppabs="http://zstack.io/product_downloads/"  rel='dropmenu24'><span>产品下载</span></a></li>
+        
+        <li><a href="../../../../community/index.htm" tppabs="http://zstack.io/community/"  rel='dropmenu25'><span>开源社区</span></a></li>
+        
+        <li><em>400-962-2212</em></li>
+      </ul>
+    </div>
+
+     <div class="search fright">
+      <form  name="formsearch" action="http://zstack.io/plus/search.php">
+        <div class="form">        
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="" onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        </div>
+
+    </div> 
+</div>
+<!-- //二级子类下拉菜单 -->  
+   <script type='text/javascript' src="../../../../templets/default/js/dropdown.js" tppabs="http://zstack.io/templets/default/js/dropdown.js"></script>  
+   <ul id="dropmenu17" class="dropMenu">  
+         
+   </ul><ul id="dropmenu18" class="dropMenu">  
+         
+       <li><a href="../../../../about/index.htm" tppabs="http://zstack.io/about/">关于我们</a></li>  
+         
+       <li><a href="../../../../contact/index.htm" tppabs="http://zstack.io/contact/">联系我们</a></li>  
+         
+       <li><a href="../../../../joinus/index.htm" tppabs="http://zstack.io/joinus/">加入我们</a></li>  
+         
+   </ul><ul id="dropmenu12" class="dropMenu">  
+         
+       <li><a href="../../../../support/user-manual/index.htm" tppabs="http://zstack.io/support/user-manual/">用户手册</a></li>  
+         
+       <li><a href="../../../../support/docs/index.htm" tppabs="http://zstack.io/support/docs/">文档</a></li>  
+         
+       <li><a href="../../../../support/tutorials/index.htm" tppabs="http://zstack.io/support/tutorials/">教程</a></li>  
+         
+       <li><a href="../../../../support/video/index.htm" tppabs="http://zstack.io/support/video/">视频</a></li>  
+         
+       <li><a href="../../../../support/blog/index.htm" tppabs="http://zstack.io/support/blog/">博客</a></li>  
+         
+       <li><a href="../../../../support/FAQ/index.htm" tppabs="http://zstack.io/support/FAQ/">FAQ</a></li>  
+         
+   </ul><ul id="dropmenu24" class="dropMenu">  
+         
+       <li><a href="../../../../product_downloads/premium/index.htm" tppabs="http://zstack.io/product_downloads/premium/">付费版</a></li>  
+         
+       <li><a href="../../../../product_downloads/experimental/index.htm" tppabs="http://zstack.io/product_downloads/experimental/">实验版</a></li>  
+         
+       <li><a href="../../../../product_downloads/trial/index.htm" tppabs="http://zstack.io/product_downloads/trial/">试用版</a></li>  
+         
+   </ul><ul id="dropmenu25" class="dropMenu">  
+         
+       <li><a href="../../../../community/code/index.htm" tppabs="http://zstack.io/community/code/">代码</a></li>  
+         
+       <li><a href="../../../../community/docs/index.htm" tppabs="http://zstack.io/community/docs/">文档</a></li>  
+         
+       <li><a href="../../../../community/tutorials/index.htm" tppabs="http://zstack.io/community/tutorials/">教程</a></li>  
+         
+       <li><a href="../../../../community/downloads/index.htm" tppabs="http://zstack.io/community/downloads/">开源版下载</a></li>  
+         
+   </ul>  
+   <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+<link href="../../../../templets/default/css/news-slider.css" tppabs="http://zstack.io/templets/default/css/news-slider.css" rel="stylesheet" >
+<link href="../../../../templets/default/css/bootstrap.min.css" tppabs="http://zstack.io/templets/default/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../../../templets/default/css/font-awesome.min.css" tppabs="http://zstack.io/templets/default/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="../../../../templets/default/css/animate.min.css" tppabs="http://zstack.io/templets/default/css/animate.min.css" rel="stylesheet" media="all">
+<link href="../../../../templets/default/css/bootstrap-touch-slider.css" tppabs="http://zstack.io/templets/default/css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+  <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line " data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+      <!-- Wrapper For Slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Third Slide -->
+        <div class="item active">
+
+          <!-- Slide Background -->
+          <img src="../../../../templets/default/images/bg_user.jpg" tppabs="http://zstack.io/templets/default/images/bg_user.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+          <div class="bs-slider-overlay"></div>
+
+          <div class="container">
+            <div class="row">
+              <!-- Slide Text Layer -->
+              <div class="slide-text slide_style_center margint40">
+                <img src="../../../../templets/default/images/user.png" tppabs="http://zstack.io/templets/default/images/user.png" width="60px"/><br/>
+                <span class="btitle">用户手册</span><br/>
+                <h5 >USER MANUAL</h5><br/>
+    <div class="searcher">
+      <form  name="formsearch" action="http://zstack.io/plus/search.php">
+        <div class="form">        
+           <input type="hidden" name="kwtype" value="0" />
+           <input type="hidden" name="typeid" value="76" />
+           <input name="q" type="text" class="search-keyword1" id="search-keyword" value="" onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='';}" placeholder="用户手册搜索"/>
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit1">搜索</button>
+        </div>
+      </form>
+    </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Slide -->
+        <!-- End of Slide -->        
+      </div><!-- End of Wrapper For Slides -->
+    </div> <!-- End  bootstrap-touch-slider Slider -->
+
+
+
+
+    <div class="container  clear mt1 FAQ" id="content" name="content">
+      <div class="place"> <strong>当前位置:</strong> <a href="javascript:if(confirm(%27http://www.zstack.io/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/%27" tppabs="http://www.zstack.io/">主页</a> > <a href="../../../../support/index.htm" tppabs="http://zstack.io/support/">技术支持</a> > <a href="../../../../support/user-manual/index.htm" tppabs="http://zstack.io/support/user-manual/">用户手册</a> > <a href="../../index.htm" tppabs="http://zstack.io/user-manual/installMevoco/">3 安装部署Mevoco</a> >  </div>
+      <div class="listbox_user">
+      
+        <div class="sectiontitlepost">
+            <h1>3.1 ZStack管理节点</h1>
+        </div>
+        <div class="content_user">
+          
+          <p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;"><br/></p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">如果用户选择管理节点安装模式，重启后会自动安装ZStack企业版的管理节点，如图3-1-1所示。安装完成后将自动进入TUI。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767090825487.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767090825487.png" title="1488767090825487.png" alt="屏幕快照 2017-03-06 上午10.24.35.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-1 自动安装ZStack管理节点</h6><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">1. 主界面</h3><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">TUI的主界面如图3-1-2所示，主界面实时显示物理机的主要信息：</p><ul style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; margin-bottom: 0.85em; padding: 0px 0px 0px 2em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;" class=" list-paddingleft-2"><li><p><code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">NODE INFO</code>&nbsp;显示管理节点当前状态，包括服务是否允许、UI是否允许、ZStack版本以及UI地址等；</p></li><li><p><code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">TIME INFO</code>&nbsp;显示当前时间、服务器启动时间、服务器运行时长、服务器平均负载等；</p></li><li><p><code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">CPU USAGE</code>&nbsp;显示每个CPU核心的实时利用率；</p></li><li><p><code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">MEM/DISK FREE SPACE</code>&nbsp;显示内存、SWAP、和磁盘的剩余空间；</p></li><li><p><code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">NET TRAFFIC</code>&nbsp;显示服务器网卡列表，及其对应的IP地址等信息。</p></li></ul><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767120598699.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767120598699.png" title="1488767120598699.png" alt="屏幕快照 2017-03-06 上午10.24.58.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-2 TUI界面</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">主界面还提供了<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">进入系统配置</code>和<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">重启/关机</code>两个入口。根据提示按下<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">F2</code>或者<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">F12</code>即可进入相应窗口。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">2. 系统密码</h3><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">在主界面按下<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">F2</code>或者<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">F12</code>时，需要首先输入系统密码，因为无论系统配置还是重启/关机都属于特权操作。下图中显示了输入系统密码的窗口，<span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">根据提示输入ROOT密码，回车即可</span>。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767145102487.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767145102487.png" title="1488767145102487.png" alt="屏幕快照 2017-03-06 上午10.25.32.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-3 输入密码</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">若密码不正确，操作会被阻止，TUI返回主界面。</p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;"><br/></p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767179472150.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767179472150.png" title="1488767179472150.png" alt="屏幕快照 2017-03-06 上午10.26.02.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-4 输入密码错误<br/></h6><h2 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.75em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">3. 系统配置</h2><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">如图3-1-5所示，系统设置的功能包括：修改Hostname、修改密码、测试网络、重启网络、配置网络、配置控制台代理、收集日志、备份数据库、重启ZStack服务、重装ZStack服务、重装ZStack服务并删除数据库、终端信息等。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767215419493.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767215419493.png" title="1488767215419493.png" alt="屏幕快照 2017-03-06 上午10.26.39.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-5 系统配置</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">如上图所示，系统配置界面提供若干系统配置入口。<span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">使用上下键移动光标，选择需要的配置按钮，按下回车即可进入相应配置界面</span>。对于熟悉Vim的用户，也可以使用<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">j</code>和<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">k</code>实现光标上下移动。</p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">根据提示，按下<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">F2</code>可以退出至主界面。再次回到系统配置界面时需要重新输入ROOT密码。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">修改HOSTNAME</h3><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">ZStack服务使用RabbitMQ作为消息总线，而RabbitMQ是基于主机名的，因此服务器主机名的配置非常重要。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767274628710.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767274628710.png" title="1488767274628710.png" alt="屏幕快照 2017-03-06 上午10.27.37.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-6 修改hostname</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Change Hostname</code>处，按下回车，即可进入主机名配置窗口。根据提示输入想要修改的主机名，再次按下回车即可。</p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">注意：</span>&nbsp;主机名的选取需要遵循一定的规则，比如不可以是纯数字、不可以是<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">localhost</code>、不可以是IP地址等。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767303454712.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767303454712.png" title="1488767303454712.png" alt="屏幕快照 2017-03-06 上午10.28.00.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-7 确认修改</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">由于修改主机名会导致ZStack服务重启，属于较重操作，因此不允许用户通过简单地回车，而是要显式地输入<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Y</code>来加以确认，以免误操作。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767381707645.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767381707645.png" title="1488767381707645.png" alt="屏幕快照 2017-03-06 上午10.28.30.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-8 等待界面</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">对于耗时较长的操作，TUI会给出<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Please wait...</code>的提示，用户需耐心等待。.</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767410744553.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767410744553.png" title="1488767410744553.png" alt="屏幕快照 2017-03-06 上午10.29.56.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-9 hostname修改</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">当修改成功时会给出提示。</p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">备注1：之后的配置项大多包含类似的窗口，不再一一赘述。</span></p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;"><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">备注2：任何时候，只要按下ESC键，就可以退出当前窗口，返回系统配置界面或者主界面。</span></p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">修改密码</h3><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Change Passwords</code>处，按下回车，即可进入密码配置窗口。该配置项集中了管理节点需要的四种密码修改动作：</p><ul style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; margin-bottom: 0.85em; padding: 0px 0px 0px 2em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;" class=" list-paddingleft-2"><li><p>修改系统密码</p></li><li><p>修改root账号的MySQL密码</p></li><li><p>修改zstack账号的MySQL密码</p></li><li><p>修改RabbitMQ密码</p></li></ul><h5 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">修改系统密码</h5><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767442777801.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767442777801.png" title="1488767442777801.png" alt="屏幕快照 2017-03-06 上午10.30.26.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-10 修改系统密码</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">根据提示输入旧系统密码、新系统密码以及新密码确认，回车即可。如果旧系统密码不正确、或者密码确认不一致，都会弹出错误窗口。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767476986493.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767476986493.png" title="1488767476986493.png" alt="屏幕快照 2017-03-06 上午10.30.47.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-11 等待界面</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">当系统密码修改成功时，会自动退出系统配置界面，返回主界面。用户需要重新输入密码才可以再次进入系统配置界面。</p><h5 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">修改MySQL密码</h5><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767504463678.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767504463678.png" title="1488767504463678.png" alt="屏幕快照 2017-03-06 上午10.31.27.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-12 修改MySQL密码</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">修改MySQL密码需要MySQL的root权限，因此<span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">首先需要输入MySQL root密码</span>， 然后根据提示再输入新密码和密码确认，回车即可。如果MySQL root密码不正确、或者密码确认不一致，都会弹出错误窗口。</p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">此操作需要重启ZStack服务，耗时较长，需要用户按<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Y</code>键确认。</p><h5 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">修改RabbitMQ密码</h5><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767538755199.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767538755199.png" title="1488767538755199.png" alt="屏幕快照 2017-03-06 上午10.31.54.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-13 修改RabbitMQ密码</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">修改RabbitMQ密码需要管理员权限，因此<span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">首先需要输入系统root密码</span>，然后<span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">根据提示再输入新密码和密码确认，回车即可。</span>&nbsp;如果系统密码不正确、或者密码确认不一致，都会弹出错误窗口。</p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">此操作需要重启ZStack服务，耗时较长，需要用户按<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Y</code>键确认。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">测试网络</h3><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488767561654646.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767561654646.png" title="1488767561654646.png" alt="屏幕快照 2017-03-06 上午10.32.26.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-14 测试网络</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Test Network</code>处，按下回车，即可进入网络测试窗口。这里默认填写了<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">114.114.114.114</code>，用户测试外网连接；若要测试内网连接，请自行填写内网IP。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;"><span style="font-size: 24px;"><strong>重启网络</strong></span></h3><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;"><img src="../../../../ueditor/php/upload/image/20170306/1488767895228231.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488767895228231.png" title="1488767895228231.png" alt="屏幕快照 2017-03-06 上午10.37.50.png"/><br/></h3><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-15 重启网络</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Restart Network</code>处，按下回车，即可进入重启网络窗口。 重启网络操作需要用户按<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Y</code>确认。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">配置网络</h3><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768105285348.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768105285348.png" title="1488768105285348.png" alt="屏幕快照 2017-03-06 上午10.41.19.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-16 配置网络</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Configure Networks</code>处，按下回车，即可进入网络配置窗口。这里罗列了服务器中的网卡，将光标移动至目标网卡上，再次回车，即可进入该网卡的配置界面。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768135599787.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768135599787.png" title="1488768135599787.png" alt="屏幕快照 2017-03-06 上午10.41.54.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-17 填写信息</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">根据提示填写IP地址、子网掩码和网关，回车。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768169289969.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768169289969.png" title="1488768169289969.png" alt="屏幕快照 2017-03-06 上午10.42.30.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-18 确认界面</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: left;">如果所选网卡为管理网所在网卡，则需要谨慎操作。这会耗费较长一段时间，而且UI地址等都将发生变化。当修改成功过后，按<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">F2</code>退至主界面，会看到UI地址已经发生了变化。</p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">如果所选网卡为普通网卡，则仅执行常规的网卡配置操作。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">配置终端代理(Console Proxy)</h3><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768194789697.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768194789697.png" title="1488768194789697.png" alt="屏幕快照 2017-03-06 上午10.42.58.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-19 配置终端代理</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Configure Console Proxy</code>处，按下回车，即可进入终端代理配置窗口。 输入代理IP和代理端口，回车即可。</p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">此操作需要重置RabbitMQ服务，耗时较长，需要用户按<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Y</code>键确认。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">收集日志</h3><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768254702819.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768254702819.png" title="1488768254702819.png" alt="屏幕快照 2017-03-06 上午10.43.53.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-20 收集日志</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Collect Logs</code>处，按下回车，即可进入日志收集窗口。点击回车即可将整个集群（包括管理节点和计算节点）的日志收集，并置于HTTP服务中。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768338170224.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768338170224.png" title="1488768338170224.png" alt="屏幕快照 2017-03-06 上午10.45.22.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-21 日志导出成功</h6><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768371278653.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768371278653.png" title="1488768371278653.png" alt="屏幕快照 2017-03-06 上午10.45.50.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-22 下载日志</h6><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768405859091.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768405859091.png" title="1488768405859091.png" alt="屏幕快照 2017-03-06 上午10.46.25.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-23 在线浏览日志</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">根据提示，用户可以通过浏览器直接访问所有日志内容。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">备份数据库</h3><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768430677515.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768430677515.png" title="1488768430677515.png" alt="屏幕快照 2017-03-06 上午10.46.54.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-24 备份数据库</h6><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768460852604.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768460852604.png" title="1488768460852604.png" alt="屏幕快照 2017-03-06 上午10.47.17.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-25 备份数据库成功</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Backup Database</code>处，按下回车，即可进入数据库备份窗口。点击回车即可将数据库打包并保存在<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">/var/lib/zstack/</code>目录下。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">重启ZStack服务</h3><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768485394903.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768485394903.png" title="1488768485394903.png" alt="屏幕快照 2017-03-06 上午10.47.50.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-26 重启ZStack服务</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Restart ZStack Service</code>处，按下回车，即可进入重启服务窗口。再次回车即可重启ZStack服务。 该操作耗时较长，需要用户输入<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Y</code>确认。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">重装ZStack</h3><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768510765118.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768510765118.png" title="1488768510765118.png" alt="屏幕快照 2017-03-06 上午10.48.16.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-27 重装ZStack</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Reset ZStack Service</code>处，按下回车，即可进入重装ZStack窗口。<span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">该操作属于极重操作</span>，需要用户输入<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">RESET</code>，才能回车确认。</p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">重装ZStack并清空数据库</h3><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768533414459.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768533414459.png" title="1488768533414459.png" alt="屏幕快照 2017-03-06 上午10.48.35.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-28 重装ZStack并清空数据库</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Reset ZStack Service &amp; Database</code>处，按下回车，即可进入重置ZStack和数据库窗口。该操作与上一操作一样属于极重操作，而且在重装ZStack的同时还会清空已有的数据库！<span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-weight: 700; font-size: inherit;">请谨慎使用此功能！</span></p><h3 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.5em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">进入终端</h3><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768565683674.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768565683674.png" title="1488768565683674.png" alt="屏幕快照 2017-03-06 上午10.48.59.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-29 进入终端提示</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">ZStack TUI为用户保留了进入终端的入口。将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Terminal Info</code>处，回车即可看到入口信息。其中：</p><ul style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; margin-bottom: 0.85em; padding: 0px 0px 0px 2em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;" class=" list-paddingleft-2"><li><p>按下<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Ctrl + Alt + F11</code>可以进入保留终端，用户可以在里面执行常规命令 ，但是请谨慎使用，以免对系统造成破坏，影响ZStack服务运行。</p></li><li><p>按下<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Ctrl + Alt + F12</code>可以进入<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">zstack-cli</code>命令行界面。</p></li><li><p>任何时候都可以通过按下<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Ctrl + Alt + F1</code>返回ZStack TUI。</p></li></ul><h2 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1.75em; orphans: 3; widows: 3; page-break-after: avoid; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">4. 重启/关机</h2><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768597702208.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768597702208.png" title="1488768597702208.png" alt="屏幕快照 2017-03-06 上午10.49.36.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-30 重启/关机</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">在主界面按下<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">F12</code>即可进入重启/关机界面。用户选择将光标移动至<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Reboot</code>或<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">Poweroff</code>按钮，回车即可进入确认界面。</p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768630298010.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768630298010.png" title="1488768630298010.png" alt="屏幕快照 2017-03-06 上午10.50.11.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-31 重启确认</h6><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768688318314.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768688318314.png" title="1488768688318314.png" alt="屏幕快照 2017-03-06 上午10.50.39.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; margin-bottom: 0.85em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; text-align: center;">图3-1-32 关机确认</h6><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">两种操作都需要用户根据提示输入<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">REBOOT</code>或<code style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; font-size: 0.85em; page-break-inside: avoid; direction: ltr; margin: 0px; padding: 0.2em; border: none; color: inherit; background-color: rgb(247, 247, 247);">POWEROFF</code>才可以回车确认，以免误操作。</p><p style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; orphans: 3; widows: 3; margin-top: 0px; margin-bottom: 0.85em; color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal;">此外，在“安装管理节点”模式下，如果由于缺少网卡配置或者其他原因导致导致ZStack安装失败，都会退出到终端。用户根据红框中的文字提示，手动安装ZStack并启动ZStack服务后，TUI会自动启动。 手动安装ZStack的过程详见<a href="javascript:if(confirm(%27http://www.zstack.io/user-manual/installMevoco/2017/0224/1123.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/user-manual/installMevoco/2017/0224/1123.html%27" tppabs="http://www.zstack.io/user-manual/installMevoco/2017/0224/1123.html" target="_self" style="color: rgb(84, 141, 212); text-decoration: underline;"><span style="color: rgb(84, 141, 212);">升级ZStack</span></a></p><p style="text-align:center"><img src="../../../../ueditor/php/upload/image/20170306/1488768707505401.png" tppabs="http://zstack.io/ueditor/php/upload/image/20170306/1488768707505401.png" title="1488768707505401.png" alt="屏幕快照 2017-03-06 上午10.51.33.png"/></p><h6 style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 1em; margin-top: 1.275em; color: rgb(119, 119, 119); font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; letter-spacing: 0.20000000298023224px; white-space: normal; margin-bottom: 0px !important; text-align: center;">图3-1-33 网卡异常提示</h6><p><br/></p>
+       
+        </div>
+      </div><!-- /listbox -->
+    
+      <div class="pleft_user">
+        <div class="hot mt1 ">
+           <aside class="main-sidebar">
+              <section>
+                  <ul class="sidebar-menu">
+                    <li class="header">目录</li>
+                   
+                    <li >
+                      <a href="../../../copyright/index.htm#content" tppabs="http://zstack.io/user-manual/copyright/#content" id="arc_73">
+                        <span>版权声明</span>
+                      </a>
+                      
+                      
+                      
+                        
+                      
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../../summary/index.htm#content" tppabs="http://zstack.io/user-manual/summary/#content" id="arc_74">
+                        <span>1 概述</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="../../../summary/2017/0209/298.html#content" tppabs="http://zstack.io/user-manual/summary/2017/0209/298.html#content" id="arc_298"><i class="fa fa-circle-o"></i>1.1 系统简介</a></li>
+<li><a href="../../../summary/2017/0209/299.html#content" tppabs="http://zstack.io/user-manual/summary/2017/0209/299.html#content" id="arc_299"><i class="fa fa-circle-o"></i>1.2 主要功能</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../../configuration/index.htm#content" tppabs="http://zstack.io/user-manual/configuration/#content" id="arc_75">
+                        <span>2 配置需求</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="../../../configuration/2017/0209/300.html#content" tppabs="http://zstack.io/user-manual/configuration/2017/0209/300.html#content" id="arc_300"><i class="fa fa-circle-o"></i>2.1 网络环境</a></li>
+<li><a href="../../../configuration/2017/0209/301.html#content" tppabs="http://zstack.io/user-manual/configuration/2017/0209/301.html#content" id="arc_301"><i class="fa fa-circle-o"></i>2.2 硬件要求</a></li>
+<li><a href="../../../configuration/2017/0224/1112.html#content" tppabs="http://zstack.io/user-manual/configuration/2017/0224/1112.html#content" id="arc_1112"><i class="fa fa-circle-o"></i>2.3  ZStack企业版ISO</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../index.htm#content" tppabs="http://zstack.io/user-manual/installMevoco/#content" id="arc_76">
+                        <span>3 安装部署Mevoco</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="1119.html#content" tppabs="http://zstack.io/user-manual/installMevoco/2017/0224/1119.html#content" id="arc_1119"><i class="fa fa-circle-o"></i>3.1 ZStack管理节点</a></li>
+<li><a href="1120.html#content" tppabs="http://zstack.io/user-manual/installMevoco/2017/0224/1120.html#content" id="arc_1120"><i class="fa fa-circle-o"></i>3.2 ZStack计算节点</a></li>
+<li><a href="1121.html#content" tppabs="http://zstack.io/user-manual/installMevoco/2017/0224/1121.html#content" id="arc_1121"><i class="fa fa-circle-o"></i>3.3 ZStack专家模式</a></li>
+<li><a href="1122.html#content" tppabs="http://zstack.io/user-manual/installMevoco/2017/0224/1122.html#content" id="arc_1122"><i class="fa fa-circle-o"></i>3.4 部署Mevoco服务</a></li>
+<li><a href="1123.html#content" tppabs="http://zstack.io/user-manual/installMevoco/2017/0224/1123.html#content" id="arc_1123"><i class="fa fa-circle-o"></i>3.5 升级ZStack</a></li>
+
+                      </ul>
+
+                      
+                    </li><li >
+                      <a href="../../../Login/index.htm#content" tppabs="http://zstack.io/user-manual/Login/#content" id="arc_77">
+                        <span>4 系统登录</span>
+                      </a>
+                      
+                      
+                      
+                        
+                      
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../../Wizard/index.htm#content" tppabs="http://zstack.io/user-manual/Wizard/#content" id="arc_78">
+                        <span>5 Wizard引导设置</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="../../../Wizard/2017/0209/308.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/308.html#content" id="arc_308"><i class="fa fa-circle-o"></i>5.1 添加物理机（计算节点</a></li>
+<li><a href="../../../Wizard/2017/0209/309.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/309.html#content" id="arc_309"><i class="fa fa-circle-o"></i>5.2 添加主存储</a></li>
+<li><a href="../../../Wizard/2017/0209/310.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/310.html#content" id="arc_310"><i class="fa fa-circle-o"></i>5.2.1 本地存储</a></li>
+<li><a href="../../../Wizard/2017/0209/311.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/311.html#content" id="arc_311"><i class="fa fa-circle-o"></i>5.2.2 NFS主存储</a></li>
+<li><a href="../../../Wizard/2017/0209/312.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/312.html#content" id="arc_312"><i class="fa fa-circle-o"></i>5.2.3 Ceph</a></li>
+<li><a href="../../../Wizard/2017/0209/313.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/313.html#content" id="arc_313"><i class="fa fa-circle-o"></i>5.2.4 FusionStor</a></li>
+<li><a href="../../../Wizard/2017/0209/314.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/314.html#content" id="arc_314"><i class="fa fa-circle-o"></i>5.2.5 Shared Mount Point</a></li>
+<li><a href="../../../Wizard/2017/0209/315.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/315.html#content" id="arc_315"><i class="fa fa-circle-o"></i>5.3 添加镜像服务器</a></li>
+<li><a href="../../../Wizard/2017/0209/316.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/316.html#content" id="arc_316"><i class="fa fa-circle-o"></i>5.4 添加计算规格</a></li>
+<li><a href="../../../Wizard/2017/0209/317.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/317.html#content" id="arc_317"><i class="fa fa-circle-o"></i>5.5 添加镜像</a></li>
+<li><a href="../../../Wizard/2017/0209/318.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/318.html#content" id="arc_318"><i class="fa fa-circle-o"></i>5.6 添加二层网络</a></li>
+<li><a href="../../../Wizard/2017/0209/319.html#content" tppabs="http://zstack.io/user-manual/Wizard/2017/0209/319.html#content" id="arc_319"><i class="fa fa-circle-o"></i>5.7 添加三层网络</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../../Home/index.htm#content" tppabs="http://zstack.io/user-manual/Home/#content" id="arc_79">
+                        <span>6 主界面管理</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="../../../Home/2017/0209/320.html#content" tppabs="http://zstack.io/user-manual/Home/2017/0209/320.html#content" id="arc_320"><i class="fa fa-circle-o"></i>6.1 选择语言</a></li>
+<li><a href="../../../Home/2017/0209/321.html#content" tppabs="http://zstack.io/user-manual/Home/2017/0209/321.html#content" id="arc_321"><i class="fa fa-circle-o"></i>6.2 基础设置</a></li>
+<li><a href="../../../Home/2017/0209/322.html#content" tppabs="http://zstack.io/user-manual/Home/2017/0209/322.html#content" id="arc_322"><i class="fa fa-circle-o"></i>6.3 修改密码</a></li>
+<li><a href="../../../Home/2017/0209/323.html#content" tppabs="http://zstack.io/user-manual/Home/2017/0209/323.html#content" id="arc_323"><i class="fa fa-circle-o"></i>6.4 操作助手</a></li>
+<li><a href="../../../Home/2017/0209/324.html#content" tppabs="http://zstack.io/user-manual/Home/2017/0209/324.html#content" id="arc_324"><i class="fa fa-circle-o"></i>6.5 LDAP设置</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../../VM/index.htm#content" tppabs="http://zstack.io/user-manual/VM/#content" id="arc_80">
+                        <span>7 云主机管理</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="../../../VM/2017/0209/325.html#content" tppabs="http://zstack.io/user-manual/VM/2017/0209/325.html#content" id="arc_325"><i class="fa fa-circle-o"></i>7.1 新建云主机</a></li>
+<li><a href="../../../VM/2017/0209/326.html#content" tppabs="http://zstack.io/user-manual/VM/2017/0209/326.html#content" id="arc_326"><i class="fa fa-circle-o"></i>7.2 单个云主机操作</a></li>
+<li><a href="../../../VM/2017/0209/327.html#content" tppabs="http://zstack.io/user-manual/VM/2017/0209/327.html#content" id="arc_327"><i class="fa fa-circle-o"></i>7.3 安装云主机镜像-Linux</a></li>
+<li><a href="../../../VM/2017/0209/328.html#content" tppabs="http://zstack.io/user-manual/VM/2017/0209/328.html#content" id="arc_328"><i class="fa fa-circle-o"></i>7.4 安装云主机镜像-Windo</a></li>
+<li><a href="../../../VM/2017/0209/329.html#content" tppabs="http://zstack.io/user-manual/VM/2017/0209/329.html#content" id="arc_329"><i class="fa fa-circle-o"></i>7.5 SSH公钥管理</a></li>
+<li><a href="../../../VM/2017/0209/330.html#content" tppabs="http://zstack.io/user-manual/VM/2017/0209/330.html#content" id="arc_330"><i class="fa fa-circle-o"></i>7.6 批量新建云主机</a></li>
+<li><a href="../../../VM/2017/0209/331.html#content" tppabs="http://zstack.io/user-manual/VM/2017/0209/331.html#content" id="arc_331"><i class="fa fa-circle-o"></i>7.7 批量操作云主机</a></li>
+<li><a href="../../../VM/2017/0209/332.html#content" tppabs="http://zstack.io/user-manual/VM/2017/0209/332.html#content" id="arc_332"><i class="fa fa-circle-o"></i>7.8 云主机监控</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../../Host/index.htm#content" tppabs="http://zstack.io/user-manual/Host/#content" id="arc_81">
+                        <span>8 物理机管理</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="../../../Host/2017/0209/333.html#content" tppabs="http://zstack.io/user-manual/Host/2017/0209/333.html#content" id="arc_333"><i class="fa fa-circle-o"></i>8.1 单物理机操作</a></li>
+<li><a href="../../../Host/2017/0209/334.html#content" tppabs="http://zstack.io/user-manual/Host/2017/0209/334.html#content" id="arc_334"><i class="fa fa-circle-o"></i>8.2 批量物理机操作</a></li>
+<li><a href="../../../Host/2017/0209/335.html#content" tppabs="http://zstack.io/user-manual/Host/2017/0209/335.html#content" id="arc_335"><i class="fa fa-circle-o"></i>8.3 物理机监控</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../../cluster/index.htm#content" tppabs="http://zstack.io/user-manual/cluster/#content" id="arc_82">
+                        <span>9 集群管理</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="../../../cluster/2017/0209/336.html#content" tppabs="http://zstack.io/user-manual/cluster/2017/0209/336.html#content" id="arc_336"><i class="fa fa-circle-o"></i>9.1 集群操作</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../../vCenter/index.htm#content" tppabs="http://zstack.io/user-manual/vCenter/#content" id="arc_83">
+                        <span>10 vCenter管理（技术预览）</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="../../../vCenter/2017/0209/337.html#content" tppabs="http://zstack.io/user-manual/vCenter/2017/0209/337.html#content" id="arc_337"><i class="fa fa-circle-o"></i>10.1 vCenter操作</a></li>
+<li><a href="../../../vCenter/2017/0209/338.html#content" tppabs="http://zstack.io/user-manual/vCenter/2017/0209/338.html#content" id="arc_338"><i class="fa fa-circle-o"></i>10.2 ESX(i)云主机操作</a></li>
+<li><a href="../../../vCenter/2017/0224/1125.html#content" tppabs="http://zstack.io/user-manual/vCenter/2017/0224/1125.html#content" id="arc_1125"><i class="fa fa-circle-o"></i>10.3 vCenter云路由</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="../../../image/index.htm#content" tppabs="http://zstack.io/user-manual/image/#content" id="arc_84">
+                        <span>11 镜像管理</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="../../../image/2017/0209/339.html#content" tppabs="http://zstack.io/user-manual/image/2017/0209/339.html#content" id="arc_339"><i class="fa fa-circle-o"></i>11.1 单镜像操作</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/image/2017/0209/340.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/image/2017/0209/340.html#content%27" tppabs="http://zstack.io/user-manual/image/2017/0209/340.html#content" id="arc_340"><i class="fa fa-circle-o"></i>11.2 批量镜像操作</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/storage/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/storage/#content%27" tppabs="http://zstack.io/user-manual/storage/#content" id="arc_85">
+                        <span>12 存储管理</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/storage/2017/0209/341.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/storage/2017/0209/341.html#content%27" tppabs="http://zstack.io/user-manual/storage/2017/0209/341.html#content" id="arc_341"><i class="fa fa-circle-o"></i>12.1 主存储</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/storage/2017/0209/342.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/storage/2017/0209/342.html#content%27" tppabs="http://zstack.io/user-manual/storage/2017/0209/342.html#content" id="arc_342"><i class="fa fa-circle-o"></i>12.2 镜像服务器</a></li>
+
+                      </ul>
+
+                      
+                    </li><li >
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/volume/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/volume/#content%27" tppabs="http://zstack.io/user-manual/volume/#content" id="arc_86">
+                        <span>13 云盘管理</span>
+                      </a>
+                      
+                      
+                      
+                        
+                      
+                      
+                    </li><li class="treeview"
+>
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/#content%27" tppabs="http://zstack.io/user-manual/network/#content" id="arc_87">
+                        <span>14 网络</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/343.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/343.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/343.html#content" id="arc_343"><i class="fa fa-circle-o"></i>14.1 网络设置（扁平网络）</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/344.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/344.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/344.html#content" id="arc_344"><i class="fa fa-circle-o"></i>14.2 安全组管理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/345.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/345.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/345.html#content" id="arc_345"><i class="fa fa-circle-o"></i>14.2.1 新建安全组</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/346.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/346.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/346.html#content" id="arc_346"><i class="fa fa-circle-o"></i>14.2.2 添加安全组规则</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/347.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/347.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/347.html#content" id="arc_347"><i class="fa fa-circle-o"></i>14.2.3 添加云主机给安全组</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/348.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/348.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/348.html#content" id="arc_348"><i class="fa fa-circle-o"></i>14.3 弹性IP</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/349.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/349.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/349.html#content" id="arc_349"><i class="fa fa-circle-o"></i>14.4 云路由</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/350.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/350.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/350.html#content" id="arc_350"><i class="fa fa-circle-o"></i>14.4.1 网络设置（云路由）</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/351.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/351.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/351.html#content" id="arc_351"><i class="fa fa-circle-o"></i>14.4.2 云路由镜像</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/352.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/352.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/352.html#content" id="arc_352"><i class="fa fa-circle-o"></i>14.4.3 云路由规格</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/353.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/353.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/353.html#content" id="arc_353"><i class="fa fa-circle-o"></i>14.4.4 云路由设备</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/354.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/354.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/354.html#content" id="arc_354"><i class="fa fa-circle-o"></i>14.4.5 端口转发</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0209/355.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0209/355.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0209/355.html#content" id="arc_355"><i class="fa fa-circle-o"></i>14.4.6 IPsec隧道</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/network/2017/0224/1130.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/network/2017/0224/1130.html#content%27" tppabs="http://zstack.io/user-manual/network/2017/0224/1130.html#content" id="arc_1130"><i class="fa fa-circle-o"></i>14.4.7 负载均衡</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/highavailability/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/highavailability/#content%27" tppabs="http://zstack.io/user-manual/highavailability/#content" id="arc_88">
+                        <span>15 云主机高可用</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/highavailability/2017/0209/356.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/highavailability/2017/0209/356.html#content%27" tppabs="http://zstack.io/user-manual/highavailability/2017/0209/356.html#content" id="arc_356"><i class="fa fa-circle-o"></i>15.1 云主机高可用设置</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/highavailability/2017/0209/357.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/highavailability/2017/0209/357.html#content%27" tppabs="http://zstack.io/user-manual/highavailability/2017/0209/357.html#content" id="arc_357"><i class="fa fa-circle-o"></i>15.2 云主机高可用的应用场</a></li>
+
+                      </ul>
+
+                      
+                    </li><li >
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/calculatespec/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/calculatespec/#content%27" tppabs="http://zstack.io/user-manual/calculatespec/#content" id="arc_89">
+                        <span>16 计算规格管理</span>
+                      </a>
+                      
+                      
+                      
+                        
+                      
+                      
+                    </li><li >
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/volumespec/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/volumespec/#content%27" tppabs="http://zstack.io/user-manual/volumespec/#content" id="arc_90">
+                        <span>17 云盘规格管理</span>
+                      </a>
+                      
+                      
+                      
+                        
+                      
+                      
+                    </li><li class="treeview"
+>
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/Perf-Console-Proxy-Resource/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/Perf-Console-Proxy-Resource/#content%27" tppabs="http://zstack.io/user-manual/Perf-Console-Proxy-Resource/#content" id="arc_91">
+                        <span>18 性能监控、控制台代理与资源查询和排序</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/Perf-Console-Proxy-Resource/2017/0209/358.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/Perf-Console-Proxy-Resource/2017/0209/358.html#content%27" tppabs="http://zstack.io/user-manual/Perf-Console-Proxy-Resource/2017/0209/358.html#content" id="arc_358"><i class="fa fa-circle-o"></i>18.1 性能监控</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/Perf-Console-Proxy-Resource/2017/0209/359.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/Perf-Console-Proxy-Resource/2017/0209/359.html#content%27" tppabs="http://zstack.io/user-manual/Perf-Console-Proxy-Resource/2017/0209/359.html#content" id="arc_359"><i class="fa fa-circle-o"></i>18.2 控制台代理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/Perf-Console-Proxy-Resource/2017/0209/360.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/Perf-Console-Proxy-Resource/2017/0209/360.html#content%27" tppabs="http://zstack.io/user-manual/Perf-Console-Proxy-Resource/2017/0209/360.html#content" id="arc_360"><i class="fa fa-circle-o"></i>18.3 资源查询和排序</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/Schedule/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/Schedule/#content%27" tppabs="http://zstack.io/user-manual/Schedule/#content" id="arc_92">
+                        <span>19 定时任务</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/Schedule/2017/0209/361.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/Schedule/2017/0209/361.html#content%27" tppabs="http://zstack.io/user-manual/Schedule/2017/0209/361.html#content" id="arc_361"><i class="fa fa-circle-o"></i>19.1 云主机定时任务</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/Schedule/2017/0209/362.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/Schedule/2017/0209/362.html#content%27" tppabs="http://zstack.io/user-manual/Schedule/2017/0209/362.html#content" id="arc_362"><i class="fa fa-circle-o"></i>19.2 云盘定时任务</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/account/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/account/#content%27" tppabs="http://zstack.io/user-manual/account/#content" id="arc_93">
+                        <span>20 用户管理</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/account/2017/0209/363.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/account/2017/0209/363.html#content%27" tppabs="http://zstack.io/user-manual/account/2017/0209/363.html#content" id="arc_363"><i class="fa fa-circle-o"></i>20.1 账户</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/account/2017/0209/364.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/account/2017/0209/364.html#content%27" tppabs="http://zstack.io/user-manual/account/2017/0209/364.html#content" id="arc_364"><i class="fa fa-circle-o"></i>20.2 用户及用户组</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/account/2017/0209/365.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/account/2017/0209/365.html#content%27" tppabs="http://zstack.io/user-manual/account/2017/0209/365.html#content" id="arc_365"><i class="fa fa-circle-o"></i>20.3 资源共享与召回</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/account/2017/0209/366.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/account/2017/0209/366.html#content%27" tppabs="http://zstack.io/user-manual/account/2017/0209/366.html#content" id="arc_366"><i class="fa fa-circle-o"></i>20.4 更改所有者</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/account/2017/0209/367.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/account/2017/0209/367.html#content%27" tppabs="http://zstack.io/user-manual/account/2017/0209/367.html#content" id="arc_367"><i class="fa fa-circle-o"></i>20.5 计费设置</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/account/2017/0209/368.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/account/2017/0209/368.html#content%27" tppabs="http://zstack.io/user-manual/account/2017/0209/368.html#content" id="arc_368"><i class="fa fa-circle-o"></i>20.6 账户计费</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/#content" id="arc_94">
+                        <span>21 其他配置和异常处理指南</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/369.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/369.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/369.html#content" id="arc_369"><i class="fa fa-circle-o"></i>21.1 安装及部署异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/370.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/370.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/370.html#content" id="arc_370"><i class="fa fa-circle-o"></i>21.1.1 安装异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/371.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/371.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/371.html#content" id="arc_371"><i class="fa fa-circle-o"></i>21.1.2 升级异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/372.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/372.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/372.html#content" id="arc_372"><i class="fa fa-circle-o"></i>21.1.3 服务异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/373.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/373.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/373.html#content" id="arc_373"><i class="fa fa-circle-o"></i>21.2 登录异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/374.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/374.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/374.html#content" id="arc_374"><i class="fa fa-circle-o"></i>21.3 引导设置异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/375.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/375.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/375.html#content" id="arc_375"><i class="fa fa-circle-o"></i>21.3.1 添加物理机异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/376.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/376.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/376.html#content" id="arc_376"><i class="fa fa-circle-o"></i>21.3.2 添加主存储异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/377.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/377.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/377.html#content" id="arc_377"><i class="fa fa-circle-o"></i>21.3.3 添加镜像服务器异常</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/378.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/378.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/378.html#content" id="arc_378"><i class="fa fa-circle-o"></i>21.3.4 添加计算规格异常处</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/379.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/379.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/379.html#content" id="arc_379"><i class="fa fa-circle-o"></i>21.3.5 添加云主机镜像异常</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/380.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/380.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/380.html#content" id="arc_380"><i class="fa fa-circle-o"></i>21.3.6 添加二层网络异常处</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/381.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/381.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/381.html#content" id="arc_381"><i class="fa fa-circle-o"></i>21.3.7 添加三层网络配置异</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/382.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/382.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/382.html#content" id="arc_382"><i class="fa fa-circle-o"></i>21.4 创建云主机异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/383.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/383.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/383.html#content" id="arc_383"><i class="fa fa-circle-o"></i>21.5 主界面异常处理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/exceptionhandling/2017/0209/384.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/exceptionhandling/2017/0209/384.html#content%27" tppabs="http://zstack.io/user-manual/exceptionhandling/2017/0209/384.html#content" id="arc_384"><i class="fa fa-circle-o"></i>21.6 控制台代理异常</a></li>
+
+                      </ul>
+
+                      
+                    </li><li class="treeview"
+>
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/#content%27" tppabs="http://zstack.io/user-manual/others/#content" id="arc_95">
+                        <span>22 其他设置</span>
+                      </a>
+                      <a href="javascript:void(0)"><i class="fa fa-angle-left pull-right"></i></a>
+
+                      
+                      <ul class="treeview-menu">
+
+                        <li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/385.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/385.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/385.html#content" id="arc_385"><i class="fa fa-circle-o"></i>22.1 安装多个管理节点</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/386.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/386.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/386.html#content" id="arc_386"><i class="fa fa-circle-o"></i>22.2 配置独立的MySQL服务器</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/387.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/387.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/387.html#content" id="arc_387"><i class="fa fa-circle-o"></i>22.3 配置独立的RabbitMQ服务</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/388.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/388.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/388.html#content" id="arc_388"><i class="fa fa-circle-o"></i>22.4 zstack.properties核心配置</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/update.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/update.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/update.html#content" id="arc_389"><i class="fa fa-circle-o"></i>22.5 更新Mevoco相关服务器</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/390.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/390.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/390.html#content" id="arc_390"><i class="fa fa-circle-o"></i>22.6 Mevoco计算节点密码变更</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/391.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/391.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/391.html#content" id="arc_391"><i class="fa fa-circle-o"></i>22.7 Mevoco管理节点更改物理</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/392.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/392.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/392.html#content" id="arc_392"><i class="fa fa-circle-o"></i>22.8 Mevoco数据库备份与恢复</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/393.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/393.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/393.html#content" id="arc_393"><i class="fa fa-circle-o"></i>22.9 CentOS7网卡设备编号变</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/394.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/394.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/394.html#content" id="arc_394"><i class="fa fa-circle-o"></i>22.10 本地存储空间扩容</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/395.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/395.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/395.html#content" id="arc_395"><i class="fa fa-circle-o"></i>22.11 日志Log收集</a></li>
+<li><a href="javascript:if(confirm(%27http://zstack.io/user-manual/others/2017/0209/396.html  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/others/2017/0209/396.html#content%27" tppabs="http://zstack.io/user-manual/others/2017/0209/396.html#content" id="arc_396"><i class="fa fa-circle-o"></i>22.12 升级ZStack定制版ISO的</a></li>
+
+                      </ul>
+
+                      
+                    </li><li >
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/authorization/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/authorization/#content%27" tppabs="http://zstack.io/user-manual/authorization/#content" id="arc_96">
+                        <span>23 授权</span>
+                      </a>
+                      
+                      
+                      
+                        
+                      
+                      
+                    </li><li >
+                      <a href="javascript:if(confirm(%27http://zstack.io/user-manual/support/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27http://zstack.io/user-manual/support/#content%27" tppabs="http://zstack.io/user-manual/support/#content" id="arc_97">
+                        <span>24 技术支持</span>
+                      </a>
+                      
+                      
+                      
+                        
+                      
+                      
+                    </li>
+                  </ul>
+                </section>
+            </aside> 
+        </div>
+      </div><!-- /pright -->
+    </div>
+
+    
+<!-- //底部模板 -->
+<div class="foot mt1 clear">
+  <div class=" container center ">
+    <div class="row up">
+			<div class="col-m-5 first">
+				<small>合作客户</small>
+			</div>
+			<div class="col-m-5">
+				<img src="../../../../templets/default/images/foot04.png" tppabs="http://zstack.io/templets/default/images/foot04.png">
+			</div>
+			<div class="col-m-5">
+				<img src="../../../../templets/default/images/foot01.png" tppabs="http://zstack.io/templets/default/images/foot01.png">
+			</div>
+			<div class="col-m-5">
+				<img src="../../../../templets/default/images/foot02.png" tppabs="http://zstack.io/templets/default/images/foot02.png">
+			</div>
+			<div class="col-m-5">
+				<img src="../../../../templets/default/images/foot03.png" tppabs="http://zstack.io/templets/default/images/foot03.png">
+			</div>
+	</div> 
+
+	<div class="row down">
+			<ul class="col-md-1 col-lg-1 col-xs-1 col-sm-1">
+			    <p>技术支持</p>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/docs/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/docs/%27" tppabs="http://www.zstack.io/support/docs/"><li>文档</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/tutorials/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/tutorials/%27" tppabs="http://www.zstack.io/support/tutorials/"><li>教程</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/video/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/video/%27" tppabs="http://www.zstack.io/support/video/"><li>视频</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/user-manual/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/user-manual/%27" tppabs="http://www.zstack.io/support/user-manual/"><li>用户手册</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/blog/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/blog/%27" tppabs="http://www.zstack.io/support/blog/"><li>博客</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/support/FAQ/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/support/FAQ/%27" tppabs="http://www.zstack.io/support/FAQ/"><li>FAQ</li></a>
+			</ul>
+			<ul class="col-md-1 col-lg-1 col-xs-1 col-sm-1">
+			    <p>社区</p>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/community/code/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/community/code/%27" tppabs="http://www.zstack.io/community/code/"><li>代码</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/community/docs/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/community/docs/%27" tppabs="http://www.zstack.io/community/docs/"><li>文档</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/community/tutorials/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/community/tutorials/%27" tppabs="http://www.zstack.io/community/tutorials/"><li>教程</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/community/downloads/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/community/downloads/%27" tppabs="http://www.zstack.io/community/downloads/"><li>开源版下载</li></a>
+			</ul>
+			<ul class="col-md-1 col-lg-1 col-xs-1 col-sm-1">
+                <p>产品下载</p>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/product_downloads/premium/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/product_downloads/premium/%27" tppabs="http://www.zstack.io/product_downloads/premium/"><li>付费版</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/product_downloads/experimental/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/product_downloads/experimental/%27" tppabs="http://www.zstack.io/product_downloads/experimental/"><li>实验版</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/product_downloads/trial/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/product_downloads/trial/%27" tppabs="http://www.zstack.io/product_downloads/trial/"><li>试用版</li></a>
+			</ul>
+			<ul class="col-md-1 col-lg-1 col-xs-1 col-sm-1">
+                <p>公司</p>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/about/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/about/%27" tppabs="http://www.zstack.io/about/"><li>关于我们</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/contact/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/contact/%27" tppabs="http://www.zstack.io/contact/"><li>联系我们</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/joinus/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/joinus/%27" tppabs="http://www.zstack.io/joinus/"><li>加入我们</li></a>
+                <a href="javascript:if(confirm(%27http://www.zstack.io/news/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.zstack.io/news/%27" tppabs="http://www.zstack.io/news/"><li>新闻</li></a>
+			</ul>
+			<ul class="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+				<p>合作</p>
+                <li>招聘<a href="mailto:hr@zstack.io"><small>hr@zstack.io</small></a></li>
+                <li>商务<a href="mailto:sales@zstack.io"><small>sales@zstack.io</small></a></li>
+                <li>联系<a href="mailto:contact@zstack.io"><small>contact@zstack.io</small></a></li>
+			</ul>
+			<div class="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+				<!-- <img src="/templets/default/images/wchat03.png" style="width: 60%;">
+				<h6>ZStack中国社区qq群<br/>
+				<img src="/templets/default/images/icon04.png"><br/>
+                 410185063
+				</h6> -->
+			</div> 
+			<div class="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+				<img src="../../../../templets/default/images/wchat01.png" tppabs="http://zstack.io/templets/default/images/wchat01.png" style="width: 70%;">
+				<!-- <h6>Zstack微信公众号<br/>
+				<img src="/templets/default/images/icon04.png"><br/>
+                 zstack_org
+				</h6> -->
+			</div>
+			<div class="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+				<img src="../../../../templets/default/images/wchat02.png" tppabs="http://zstack.io/templets/default/images/wchat02.png" style="width: 70%;">
+				<!-- <h6>Mevoco微信公众号<br/>
+				<img src="/templets/default/images/icon04.png"><br/>
+                 mevoco-zstack
+				</h6> -->
+			</div>
+			
+	</div> 
+	<span>版权所有@2016上海云轴信息科技有限公司<br/>沪ICP备15055560号</span>
+  </div>  
+</div>
+    <!-- /footer -->
+    <input type="hidden" value="1119" id="arcId">
+   
+    <script src="../../../../../cdn.bootcss.com/jquery/2.1.1/jquery.min.js" tppabs="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"/*tpa=http://zstack.io/user-manual/installMevoco/2017/0224/js/jquery-1.11.0.min.js*/><\/script>')</script>
+    <script>
+    $(function(){
+        var $arcId = $('#arcId').val();
+        var $aaid = $('#arc_'+$arcId);
+        $aaid ? $aaid.addClass('active'):"";
+        $aaid.parent().addClass('active');
+        $aaid.parent().parent().parent().addClass('active');
+    });    
+    </script>
+    <script>
+    $.sidebarMenu = function(menu) {
+      var animationSpeed = 300;
+      
+      $(menu).on('click', 'li a', function(e) {
+        var $this = $(this);
+        var checkElement = $this.next();
+
+        if (checkElement.is('.treeview-menu') && checkElement.is(':visible')) {
+          checkElement.slideUp(animationSpeed, function() {
+            checkElement.removeClass('menu-open');
+          });
+          checkElement.parent("li").removeClass("active");
+        }
+
+        //If the menu is not visible
+        else if ((checkElement.is('.treeview-menu')) && (!checkElement.is(':visible'))) {
+          //Get the parent menu
+          var parent = $this.parents('ul').first();
+          //Close all open menus within the parent
+          var ul = parent.find('ul:visible').slideUp(animationSpeed);
+          //Remove the menu-open class from the parent
+          ul.removeClass('menu-open');
+          //Get the parent li
+          var parent_li = $this.parent("li");
+
+          //Open the target menu and add the menu-open class
+          checkElement.slideDown(animationSpeed, function() {
+            //Add the class active to the parent li
+            checkElement.addClass('menu-open');
+            parent.find('li.active').removeClass('active');
+            parent_li.addClass('active');
+          });
+        }
+        //if this isn't a link, prevent the page from being redirected
+        // if (checkElement.is('.treeview-menu')) {
+        //   e.preventDefault();
+        // }
+      });
+    }
+    
+    $.sidebarMenu($('.sidebar-menu'));
+    </script>
+  </body>
+</html>
