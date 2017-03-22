@@ -299,7 +299,7 @@ table{
 
  /*----------solution   ---------*/
  .bg-five {
-  background: url(../images/bg-five.png)/*tpa=http://zstack.io/templets/default/images/bg-five.png*/ no-repeat center;
+  background: url(../../img/bg-five.png)/*tpa=http://zstack.io/templets/default/images/bg-five.png*/ no-repeat center;
   background-size: cover;
   padding: 60px 0;
       clear: both;
@@ -339,7 +339,7 @@ table{
 
 /*----------foot   ---------*/
 .foot{ 
-  background: url(../images/bgfoot.png)/*tpa=http://zstack.io/templets/default/images/bgfoot.png*/ no-repeat ;
+  background: url(../../img/bgfoot.png)/*tpa=http://zstack.io/templets/default/images/bgfoot.png*/ no-repeat ;
   padding:70px 0 50px;
   background-size: cover;
 }
@@ -420,7 +420,7 @@ table{
   padding-top: 60px;
 }
 .contact{
-  background: url(../images/bg-five.png)/*tpa=http://zstack.io/templets/default/images/bg-five.png*/ no-repeat center;
+  background: url(../../img/bg-five.png)/*tpa=http://zstack.io/templets/default/images/bg-five.png*/ no-repeat center;
     background-size: cover;
 }
 .bg-contact { 

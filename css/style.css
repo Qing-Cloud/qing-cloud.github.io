@@ -1,0 +1,16 @@
+@media screen and (max-width: 500px) {
+    html{ font-size:5px !important;}
+
+    #bannerTitle{
+        text-align: center;
+    }
+    #bannerSubTitle{
+        text-align: center;
+    }
+
+    #bannerJumbotron {
+        margin: 40% auto !important;
+    }
+}
+
+html{ font-size:10px}
