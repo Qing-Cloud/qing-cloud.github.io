@@ -1,0 +1,122 @@
+<!--banner-->
+<section class="section">
+    <div style="background-image: url(img/bg_community.jpg); background-size:cover; background-repeat: no-repeat;height: 100vh; position: relative">
+        <nav class="navbar navbar-default" style="background-color:rgba(255,255,255,0); border: none; padding: 10px 0 0 0">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="font-size: 3.3rem; color: whitesmoke; font-weight: 300">SpingCloud中国社区</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" style="color: white; font-size: 15px; font-weight: 500;">社区动态</a></li>
+                        <li><a href="#" style="color: white; font-size: 15px; font-weight: 500;">文档</a></li>
+                        <li><a href="http://blog.xujin.org/" style="color: white; font-size: 15px; font-weight: 500;">博客</a></li>
+                        <li><a href="#!/community" style="color: white; font-size: 15px; font-weight: 500;">开源社区</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div style="top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;">
+            <div style="text-align: center">
+                <p class="glyphicon glyphicon-fire" style="font-size: 12rem; color: whitesmoke"></p>
+            </div>
+            <p style="font-size: 4rem; color: whitesmoke; font-weight: 300; text-align: center">COMMUNITY</p>
+            <p style="font-size: 3.5rem; color: whitesmoke; font-weight: 300; text-align: center">开源社区</p>
+        </div>
+    </div>
+</section>
+
+<!--content-->
+<section style="min-height: 100vh; margin-bottom: 0">
+    <div class="container center" style="width: 85%; margin-top: 30px; height: 150px;">
+        <div class="col row" style="height: 100%">
+            <div class="col-lg-3 col-xs-6" ng-click="toCommunity(1)" onMouseOver="this.style.backgroundColor='#6DB33F';" onMouseOut="this.style.backgroundColor='#f6f6f6';" style="background-color: #f6f6f6; height: 100%; border: 1px solid whitesmoke; position: relative">
+                <div style="top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;">
+                    <div style="text-align: center">
+                        <p class="glyphicon glyphicon-copyright-mark" style="font-size: 6rem; "></p>
+                    </div>
+                    <p style="font-size: 2.5rem; font-weight: 400; text-align: center">代码</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xs-6" ng-click="toCommunity(2)" onMouseOver="this.style.backgroundColor='#6DB33F';" onMouseOut="this.style.backgroundColor='#f6f6f6';" style="background-color:  #f6f6f6; height: 100%; border: 1px solid whitesmoke; position: relative">
+                <div style="top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;">
+                    <div style="text-align: center">
+                        <p class="glyphicon glyphicon-list-alt" style="font-size: 6rem; "></p>
+                    </div>
+                    <p style="font-size: 2.5rem; font-weight: 400; text-align: center">文档</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xs-6" ng-click="toCommunity(3)" onMouseOver="this.style.backgroundColor='#6DB33F';" onMouseOut="this.style.backgroundColor='#f6f6f6';" style="background-color:  #f6f6f6; height: 100%; border: 1px solid whitesmoke; position: relative">
+                <div style="top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;">
+                    <div style="text-align: center">
+                        <p class="glyphicon glyphicon-text-width" style="font-size: 6rem;"></p>
+                    </div>
+                    <p style="font-size: 2.5rem;font-weight: 400; text-align: center">教程</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xs-6" ng-click="toCommunity(4)" onMouseOver="this.style.backgroundColor='#6DB33F';" onMouseOut="this.style.backgroundColor='#f6f6f6';" style="background-color:  #f6f6f6; height: 100%; border: 1px solid whitesmoke; position: relative">
+                <div style="top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;">
+                    <div style="text-align: center">
+                        <p class="glyphicon glyphicon-arrow-down" style="font-size: 6rem;"></p>
+                    </div>
+                    <p style="font-size: 2.5rem;font-weight: 400; text-align: center">开源版下载</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    <div class="container-fluid center" style="margin-top: 30px">
+        <md-card style="width: 90%; height: 400px; margin: 0 auto" ng-show="communityPart1">
+            <div style="font-size: 5.5rem; font-weight: 300">代码</div>
+        </md-card>
+        <md-card style="width: 90%; height: 400px; margin: 0 auto" ng-show="communityPart2">
+            <div style="font-size: 5.5rem; font-weight: 300">文档</div>
+        </md-card>
+        <md-card style="width: 90%; height: 400px; margin: 0 auto" ng-show="communityPart3">
+            <div style="font-size: 5.5rem; font-weight: 300">教程</div>
+        </md-card>
+        <md-card style="width: 90%; height: 400px; margin: 0 auto" ng-show="communityPart4">
+            <div style="font-size: 5.5rem; font-weight: 300">下载</div>
+        </md-card>
+    </div>
+</section>
+
+<!--footer-->
+<section class="foot mt1 clear" style="padding: 0">
+    <div class="container-fluid">
+        <div class="row down"  style="margin-top: 40px">
+            <ul class="col-lg-2 col-xs-4">
+                <a href="http://www.zstack.io/community/code/" style="color: #6DB33F; text-decoration: none">社区动态</a>
+                <a href="http://www.zstack.io/community/code/">
+                    <li>线下沙龙交流</li>
+                </a>
+                <a href="http://www.zstack.io/community/code/">
+                    <li>开源项目</li>
+                </a>
+            </ul>
+            <ul class="col-lg-2 col-xs-2">
+                <a href="http://www.zstack.io/community/code/" style="color: #6DB33F; text-decoration: none">文档</a>
+            </ul>
+            <ul class="col-lg-2 col-xs-2">
+                <a href="http://www.zstack.io/community/code/" style="color: #6DB33F; text-decoration: none">博客</a>
+            </ul>
+            <ul class="col-lg-2 col-xs-4">
+                <a href="http://www.zstack.io/community/code/" style="color: #6DB33F; text-decoration: none">关于我们</a>
+            </ul>
+            <div class="col-lg-4 col-xs-12">
+                <div class="row" style="text-align: center;">
+                    <img src="img/wchat01.png" style="width: 30%;">
+                    <img src="img/wchat02.png" style="margin-left: 20px; width: 30%;">
+                </div>
+                <p style="text-align: center; font-weight: 400">版权所有Spring Cloud中国社区<br/>沪ICP备15055560号</p>
+            </div>
+        </div>
+    </div>
+</section>
