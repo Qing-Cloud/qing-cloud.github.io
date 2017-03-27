@@ -1,6 +1,6 @@
 <!--banner-->
 <section class="section">
-    <div style="background-image: url(img/bg01.jpg); background-size:cover; background-repeat: no-repeat;height: 100%" ng-style="{height: titleHeight + 'px'}">
+    <div style="background-image: url(img/bg01.jpg); background-size:cover; background-repeat: no-repeat;height: 100vh; position: relative">
         <nav class="navbar navbar-default" style="background-color:rgba(255,255,255,0); border: none; padding: 10px 0 0 0">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -15,17 +15,26 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" style="color: white; font-size: 15px; font-weight: 500;">社区动态</a></li>
-                        <li><a href="#" style="color: white; font-size: 15px; font-weight: 500;">文档</a></li>
+                        <li><a href="#!/document" style="color: white; font-size: 15px; font-weight: 500;">文档</a></li>
                         <li><a href="http://blog.xujin.org/" style="color: white; font-size: 15px; font-weight: 500;">博客</a></li>
                         <li><a href="#!/community" style="color: white; font-size: 15px; font-weight: 500;">开源社区</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div id="bannerJumbotron" class="jumbotron" style="background-color:rgba(255,255,255,0); width: 100%; margin: 25% auto">
-            <p id="bannerTitle" style="color: white; font-size: 5rem; font-weight: 300;" class="col col-lg-offset-1">Spring Cloud-微服务解决方案</p>
-            <p id="bannerSubTitle" style="color: white; font-size: 3rem; font-weight: 300;" class="col col-lg-offset-1">大道至简／极速部署／可信赖的专有云</p>
+
+        <div id="bannerJumbotron" class="jumbotron" style="background-color:rgba(255,255,255,0); top: 50%; left: 10%; position: absolute;">
+            <p id="bannerTitle" style="color: white; font-size: 5rem; font-weight: 300;">Spring Cloud-微服务解决方案</p>
+            <p id="bannerSubTitle" style="color: white; font-size: 3rem; font-weight: 300;">大道至简／极速部署／可信赖的专有云</p>
         </div>
+
+        <!--<div style="top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;">-->
+            <!--<div style="text-align: center">-->
+                <!--<p class="glyphicon glyphicon-fire" style="font-size: 12rem; color: whitesmoke"></p>-->
+            <!--</div>-->
+            <!--<p style="font-size: 4rem; color: whitesmoke; font-weight: 300; text-align: center">Spring Cloud-微服务解决方案</p>-->
+            <!--<p style="font-size: 3.5rem; color: whitesmoke; font-weight: 300; text-align: center">大道至简／极速部署／可信赖的专有云</p>-->
+        <!--</div>-->
     </div>
 </section>
 

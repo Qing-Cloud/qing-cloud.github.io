@@ -276,7 +276,7 @@ table{
     padding-top: 50px;
     height: auto;
     float: left;
-    background: url("../../img/bg03.jpg")/*tpa=http://zstack.io/templets/default/images/counter01.jpg*/ no-repeat center;
+    background: url("../../img/counter01-1.jpg")/*tpa=http://zstack.io/templets/default/images/counter01.jpg*/ no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

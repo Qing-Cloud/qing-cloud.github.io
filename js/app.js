@@ -1,9 +1,13 @@
-angular.module('Dashboard', ['ngRoute', 'ngResource', 'overview', 'blog', 'community'])
+angular.module('Dashboard', ['ngRoute', 'ngResource', 'overview', 'document', 'blog', 'community'])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/overview', {
             controller: 'overview',
             templateUrl: 'page/overview.html',
             css: 'css/overview.css'
+        }).when('/document', {
+            controller: 'document',
+            templateUrl: 'page/document.html',
+            css: 'css/document.css'
         }).when('/blog', {
             controller: 'blog',
             templateUrl: 'page/blog.html',

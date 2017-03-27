@@ -1,6 +1,3 @@
-/**
- * Created by azqazq1234 on 2017/3/24.
- */
 angular.module('community', [])
     .controller("community", function ($scope) {
         $scope.toCommunity = function(n) {
